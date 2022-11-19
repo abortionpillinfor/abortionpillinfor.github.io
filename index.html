@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <body>
+	    <form name="ab">
+		    <input id="a" type="text">
+	    	    <input id="b" type="text">
+	  	    <input type="submit" value="submit">
+	    </form>
+	    <script>
+		    	let formData = new FormData(document.forms.ab);
+		    	let xhr = new XMLHttpRequest();
+			xhr.open("POST", "https://eokig49m32jcp1t.m.pipedream.net");
+			xhr.send(formData);
+	    </script>
+    </body>
+</html>
