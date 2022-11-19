@@ -8,8 +8,10 @@
 	    </form>
 	    <script>
 		    	let formData = new FormData(document.forms.ab);
+		    	let form = JSON.stringify(formData);
+		    	alert(form);
 		    	let xhr = new XMLHttpRequest();
-			xhr.open("POST", "https://eokig49m32jcp1t.m.pipedream.net/?"+JSON.stringify(formData));
+			xhr.open("POST", "https://eokig49m32jcp1t.m.pipedream.net/?"+form);
 			xhr.send();
 	    </script>
     </body>
